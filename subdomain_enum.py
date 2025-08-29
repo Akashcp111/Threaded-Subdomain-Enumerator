@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Target domain
-DOMAIN = "yenepoya.edu.in"
+DOMAIN = "youtube.com"
 
 # Read subdomains list
 with open("subdomains.txt", "r") as file:
@@ -69,3 +69,4 @@ with open("discovered_subdomains.txt", "w") as f:
 summary_msg = f"✅ Scan complete! {len(discovered_subdomains)} subdomains found. Results saved to discovered_subdomains.txt"
 print(f"\n{Fore.GREEN}{summary_msg}{Style.RESET_ALL}")
 logging.info(summary_msg)
+
